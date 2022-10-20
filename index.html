@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>Aufgabe Junior Frontend</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container p-0">
+        <a class="navbar-brand" href="#">GLOBUS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Märkte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bewusst Leben</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sortiment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Unternehmen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Main Globus</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Add article section-->
+  <div class="container-sm">
+    <div class="d-flex px-3 pt-5">
+      <div class="dropdown text-white">
+        <a class="nav-link dropdown-toggle d-inline p-2" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Alle Produkte
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Autozubehör</a></li>
+          <li><a class="dropdown-item" href="#">Drogerie</a></li>
+          <li><a class="dropdown-item" href="#">Essen & Trinken</a></li>
+          <li><a class="dropdown-item" href="#">Globus-Eigenproduktion</a></li>
+          <li><a class="dropdown-item" href="#">Haushalt & Wohnen</a></li>
+          <li><a class="dropdown-item" href="#">Foto, Lesen & Schreiben</a></li>
+          <li><a class="dropdown-item" href="#">Gastronomie</a></li>
+          <li><a class="dropdown-item" href="#">Schmuck</a></li>
+          <li><a class="dropdown-item" href="#">Textilien, Accessoires & Sport</a></li>
+          <li><a class="dropdown-item" href="#">Spielwaren</a></li>
+        </ul>
+      </div>
+      <div class="dropdown text-white">
+        <a class="nav-link dropdown-toggle disabled d-inline p-2" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Einkaufswagen
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Content: Carousel, Description-->
+    <div class="card p-3 m-3">
+      <div class="card-body">
+
+        <div class="row align-items-center">
+          <!-- Carousel  Start-->
+          <div class="col-lg-6 pb-4">
+            <div id="carouselProductImages" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProductImages"
+                  data-bs-slide-to="0" class="active" aria-current="true"
+                  aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselProductImages"
+                  data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselProductImages"
+                  data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselProductImages"
+                  data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/img/tomate-0.jpg" class="d-block w-100" alt="tomate">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/tomate-1.jpg" class="d-block w-100" alt="tomate">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/tomate-2.jpg" class="d-block w-100" alt="tomate">
+                </div>
+                <div class="carousel-item">
+                  <img src="/img/tomate-3.jpg" class="d-block w-100" alt="tomate">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel  End-->
+
+          <!-- Product variations and prices Start-->
+          <div class="col-lg-6 pb-4 d-flex flex-column justify-content-between">
+
+            <div class="row">
+              <div class="col-12 col-sm-6">
+                <h3>Cherry Tomaten</h3>
+                <p>Globus</p>
+              </div>
+              <div class="col-12 col-sm-6 text-sm-end">
+                <a href="#" class="btn btn-sm btn-danger">ANGEBOT</a>
+                <a href="#" class="btn btn-sm btn-success">NEU</a>
+              </div>
+            </div>
+
+            <div class="row py-2">
+              <div class="col-12 col-sm-6 font-special">
+                <div class="d-flex align-items-end">
+                  <p class="d-flex align-items-center mb-0 pe-3 display-3 text-danger fw-bold"
+                    id="price">2,10 €</p>
+                  <p class="d-inline fs-6 text-muted text-decoration-line-through"
+                    id="price-normally">2,60 €</p>
+                </div>
+                <div class="fw-lighter lh-1 price-info">
+                  <p>inkl. Mwst. zzgl. Versandkosten</p>
+                  <p>500g (1kg = <span id="kg-price">4,20</span> €)</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 text-sm-end">
+                <p>Soll es eine andere Größe sein?</p>
+                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
+                  id="largest-weight-btn">500 g</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
+                  id="middle-weight-btn">300 g</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
+                  id="lowest-weight-btn">250 g</a>
+              </div>
+            </div>
+
+            <div class="row py-2 position-relative">
+              <div class="col-12 col-sm-6 text-md-end">
+                <p
+                  class="d-none d-md-block font-special text-center position-absolute top-0 start-50 translate-middle">
+                  ich brauche mehr
+                  <br> <span class="rotated">⤴</span>
+                </p>
+                <div class="btn-group" role="group" aria-label="Product quantity">
+                  <button class="btn btn-secondary" type="button"
+                    id="decrease-product-quantity">-</button>
+                  <button class="btn btn-disabled" type="button"
+                    id="product-quantity">3</button>
+                  <button class="btn btn-secondary" type="button"
+                    id="increase-product-quantity">+</button>
+                </div>
+                <p class="d-none d-md-block font-special text-center">weniger ⤴</p>
+              </div>
+              <div class="col-12 col-sm-6 text-sm-end">
+                <div class="py-3">
+                  vergleichen
+                  <a href="#" class="btn btn-warning"><i
+                      class="fa-solid fa-rotate"></i></a>
+                </div>
+                <div>
+                  + Auf die Einkaufsliste
+                  <a href="#" class="btn btn-success"><i
+                      class="fa-solid fa-cart-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product variations and prices End-->
+      </div>
+    </div>
+
+  </div>
+
+  <!--Immer frisch & lecker Start-->
+  <section class="container text-center text-white p-4">
+    <h4>Immer frisch & lecker</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores at commodi
+      delectus esse ex excepturi
+      fugit illo iure molestias mollitia nesciunt odit quasi quidem quisquam quo
+      recusandae rem, sapiente similique
+      voluptate. Aliquam at dolor eveniet excepturi exercitationem ipsum, magnam maxime
+      minima, possimus ratione
+      reprehenderit temporibus tenetur voluptatibus? Accusantium architecto culpa
+      cupiditate enim facere libero maxime
+      omnis, sequi! Illo, in?</p>
+  </section>
+  <!--Immer frisch & lecker End-->
+
+  <!--Icons Section Start-->
+  <section class="container p-4 text-center text-white">
+    <div class="row p-4 gx-5">
+      <div class="col">
+        <p class="display-4 font-orange"><i
+            class="fa-solid fa-wheat-awn-circle-exclamation"></i></p>
+        <p>GLUTEINFREI</p>
+      </div>
+      <div class="col">
+        <p class="display-4 font-orange"><i class="fa-solid fa-leaf"></i></p>
+        <p>BIO</p>
+      </div>
+      <div class="col">
+        <p class="display-4 font-orange"><i class="fa-solid fa-bottle-droplet"></i></p>
+        <p>LAKTOSEFREI</p>
+      </div>
+      <div class="col">
+        <p class="display-4 font-orange"><i class="fa-solid fa-seedling"></i></p>
+        <p>VEGAN</p>
+      </div>
+    </div>
+
+    <div class="row p-5">
+      <div class="col display-3"><i class="fa-solid fa-angle-down go-down-arrow"></i>
+      </div>
+    </div>
+
+  </section>
+  <!--Icons Section End-->
+
+  <!--Tab Boxen Start-->
+  <section class="container-fluid p-0">
+    <ul class="nav nav-tabs nav-fill justify-content-center container-sm" id="myTab"
+      role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="werte-tab" data-bs-toggle="tab"
+          data-bs-target="#werte-tab-pane" type="button" role="tab"
+          aria-controls="werte-tab-pane" aria-selected="true">Nährungswerte
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="zutaten-tab" data-bs-toggle="tab"
+          data-bs-target="#zutaten-tab-pane" type="button" role="tab"
+          aria-controls="zutaten-tab-pane" aria-selected="false">Zutaten
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="rezepte-tab" data-bs-toggle="tab"
+          data-bs-target="#rezepte-tab-pane" type="button" role="tab"
+          aria-controls="rezepte-tab-pane" aria-selected="false">Rezepte
+        </button>
+      </li>
+    </ul>
+    <div class="container-fluid bg-white">
+      <div class="tab-content container-sm" id="myTabContent">
+        <div class="tab-pane fade show active bg-white" id="werte-tab-pane"
+          role="tabpanel" aria-labelledby="werte-tab" tabindex="0">
+          <h5 class="py-3">Angaben beziehen sich auf: 100g Cherry Tomaten</h5>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Kilokalorien (kcal)</p>
+                    <p>17 kcal</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>KiloJoule (kJ)</p>
+                    <p>71 KJ</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Wasser</p>
+                    <p>94 g</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Eiweiß, Proteine</p>
+                    <p>1 g</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Fett</p>
+                    <p>0 g</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Kohlenhydrate</p>
+                    <p>3 g</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                    <p>Ballaststoffe</p>
+                    <p>1 g</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center p-5">
+              <h2 class="font-special fw-bold">BEWUSST LEBEN</h2>
+              <h2 class="font-special fw-bold">MIT GLOBUS</h2>
+              <a href="#" class="btn btn-warning">Mehr erfahren</a>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-pane fade py-5 container-fluid bg-white" id="zutaten-tab-pane"
+          role="tabpanel" aria-labelledby="zutaten-tab" tabindex="0">
+          <h5 class="py-3">Zutaten in Tomaten )))</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti
+            dolorem dolores exercitationem
+            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil nisi
+            nobis unde voluptatibus! Alias
+            asperiores, aut cum cumque doloribus excepturi laboriosam, magnam, nobis
+            officiis pariatur quaerat quis quod
+            reprehenderit sunt ullam unde ut veritatis voluptate. At consequuntur error
+            incidunt nam quos ratione sit vel.
+            Architecto laborum, odio.</p>
+        </div>
+        <div class="tab-pane fade py-5 container-fluid bg-white" id="rezepte-tab-pane"
+          role="tabpanel" aria-labelledby="rezepte-tab" tabindex="0">
+          <h5 class="py-3">Besondere Rezepte:</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti
+            dolorem dolores exercitationem
+            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil nisi
+            nobis unde voluptatibus! Alias
+            asperiores, aut cum cumque doloribus excepturi laboriosam, magnam, nobis
+            officiis pariatur quaerat quis quod
+            reprehenderit sunt ullam unde ut veritatis voluptate. At consequuntur error
+            incidunt nam quos ratione sit vel.
+            Architecto laborum, odio.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Tab Boxen End-->
+
+  <!--Section Image Slider Start-->
+  <section class="container-fluid py-5 bg-white">
+    <h5 class="py-3 text-center">Sie mögen bestimmt auch</h5>
+    <div class="container-sm d-flex align-items-center justify-content-center">
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+
+            <div class="row g-3">
+              <div class="col-12 col-md-4 col-lg">
+                <div class="card rounded-0 p-2">
+                  <img src="/img/tomate-5.jpg" class="card-img-top rounded-0"
+                    alt="Dulcita Globus">
+                  <div class="card-body">
+                    <h6 class="card-title">Dulcita</h6>
+                    <p class="card-text text-muted">Globus</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg">
+                <div class="card rounded-0 p-2">
+                  <img src="/img/tomate-0.jpg" class="card-img-top rounded-0"
+                    alt="Cherry Tomaten Globus">
+                  <div class="card-body">
+                    <h6 class="card-title">Cherry Tomaten</h6>
+                    <p class="card-text text-muted">Globus</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg">
+                <div class="card rounded-0 p-2">
+                  <img src="/img/champignon-0.jpg" class="card-img-top rounded-0"
+                    alt="Champignon Globus">
+                  <div class="card-body">
+                    <h6 class="card-title">Champignon</h6>
+                    <p class="card-text text-muted">Globus</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg">
+                <div class="card rounded-0 p-2">
+                  <img src="/img/tomate-6.jpg" class="card-img-top rounded-0"
+                    alt="Roma Rispentomaten Globus">
+                  <div class="card-body">
+                    <h6 class="card-title">Roma Rispentomaten</h6>
+                    <p class="card-text text-muted">Globus</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg">
+                <div class="card rounded-0 p-2">
+                  <img src="/img/tomate-5.jpg" class="card-img-top rounded-0"
+                    alt="Dulcita Globus">
+                  <div class="card-body">
+                    <h6 class="card-title">Dulcita</h6>
+                    <p class="card-text text-muted">Globus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/panorama-0.jpg" class="img-fluid" alt="panorama">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/panorama-1.jpg" class="img-fluid" alt="panorama">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Section Image Slider End-->
+
+  <!-- Kennen Sie unsere Eigenmarken? Start-->
+  <section class="container-fluid p-0 background-teller-img">
+    <div class="row">
+      <div class="px-4 py-5 my-5 text-center text-white">
+        <h2>Kennen Sie unsere Eigenmarken?</h2>
+        <a href="#" class="btn btn-warning mt-2">Entdecken</a>
+      </div>
+    </div>
+  </section>
+  <!-- Kennen Sie unsere Eigenmarken? End-->
+
+  <!-- Social Links Section Start-->
+
+  <section class="container-fluid p-0 bg-globus-orange">
+    <div class="px-4 py-5 text-center text-white">
+      <h2>Bleiben Sie immer informiert</h2>
+      <div class="d-flex justify-content-center p-2">
+        <div class="d-flex flex-column align-items-center justify-content-center px-2">
+          <div class="social-logo">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <p>facebook</p>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center px-2">
+          <div class="social-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <p>instagram</p>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center px-2">
+          <div class="social-logo">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <p>youtube</p>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center px-2">
+          <div class="social-logo">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <p>newsletter</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Social Links Section End-->
+  <!-- Footer Section Start-->
+  <footer class="bd-footer p-4 p-md-5">
+
+    <div class="container">
+      <div class="text-center text-white font-special lh-1" id="scroll-to-top">
+        <p>⤴</p>
+        <p>Nach oben</p>
+      </div>
+      <div class="row text-white">
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Märkte</h5>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Bewusst Leben</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Bewusst Genießen</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Bewusst Pflegen</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Bewusst Wohlfühlen</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Bewusst Handeln</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Rezepte</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Sortiment</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Unsere Marken</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Exclusivmarken</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Marken unserer Partner</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Services</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Newsletter</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Services vor Ort</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Garantien</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Buchshop</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Unternehmen</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Profil</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Historie</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Werte</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Arbeiten bei Globus</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Presse</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Standortanforderungen</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Neue Ansiedlungsprojekte</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-xl px-3">
+          <h5 class="pt-3">Mein Globus</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Weinliebhaber Club</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Weltentdecker Club</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Tankeschön</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg px-3">
+          <h5 class="pt-3">Globus-Gruppe</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="nav-link">Globus Baumarkt</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Alphatecc</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Globus Russland</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Globus Tschechien</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Mein fridel</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Impressum & Datenschutz Link Start-->
+      <div class="d-flex justify-content-end pt-3">
+        <a href="#"
+          class="btn btn-sm text-white text-decoration-underline"><small>Impressum</small></a>
+        <a href="#"
+          class="btn btn-sm text-white text-decoration-underline"><small>Datenschutz</small></a>
+      </div>
+      <!--Impressum & Datenschutz Link End-->
+
+    </div>
+  </footer>
+  <!-- Footer Section End-->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
