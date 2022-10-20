@@ -23,49 +23,65 @@
 <body>
   <img src="./goal/goal-description-0.png" id="goal" alt="goal">
   <header>
-    <nav class="navbar navbar-expand-lg sticky-top bg-light">
-      <div class="container p-0">
-        <a class="navbar-brand" href="#">GLOBUS</a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light p-0 m-0 d-flex justify-content-center">
+      <div class="d-flex align-items-center justify-content-around">
+
+        <a class="navbar-brand ps-3 pt-0 globus-logo me-0" href="#"><img
+            src="./img/globus-logo.png" alt="globus-logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Märkte</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Bewusst Leben</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sortiment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Unternehmen</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Main Globus</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse ps-1 pe-5" id="navbarNav">
+          <div class="navbar-nav d-flex fw-bold">
+            <a class="nav-link pb-0 px-3 active" aria-current="page" href="#">Märkte</a>
+            <a class="nav-link pb-0 px-3" href="#">Bewusst Leben</a>
+            <a class="nav-link pb-0 px-3" href="#">Sortiment</a>
+            <a class="nav-link pb-0 px-3" href="#">Services</a>
+            <a class="nav-link pb-0 px-3" href="#">Unternehmen</a>
+            <a class="nav-link pb-0 px-3" href="#"><span class="text-green">Mein
+                Globus</span></a>
+          </div>
         </div>
+
+        <div class="align-self-start py-4 ps-5">
+          <div class="d-flex justify-content-between text-end fw-bold pb-2">
+            <div class="d-flex text-globus-orange">
+              <i class="fa-solid fa-user fs-5"></i>
+              <a href="#" class="login-section-link pe-3">
+                Anmelden</a>
+            </div>
+            <a href="#" class="login-section-link">Kontakt</a>
+            <a href="#" class="login-section-link pe-0">Newsletter</a>
+          </div>
+          <div class="text-end">
+            <a href="#" class="btn text-decoration-none px-1"><i
+                class="fa-brands fa-youtube fs-4 header-icon"></i>
+            </a>
+            <a href="#" class="btn text-decoration-none px-1"><i
+                class="fa-brands fa-facebook-f fs-4 header-icon"></i>
+            </a>
+            <a href="#" class="btn text-decoration-none px-0"><i
+                class="fa-brands fa-instagram fs-4 header-icon"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
     </nav>
   </header>
 
-  <!-- Add article section-->
-  <div class="container-sm">
-    <div class="d-flex px-3 pt-5">
+  <section
+    class="d-flex align-items-center justify-content-around dropdown-bag-section pb-2">
+    <div class="d-flex pt-5">
       <div class="dropdown text-white">
-        <a class="nav-link dropdown-toggle d-inline p-2" role="button"
+        <a class="nav-link dropdown-toggle d-inline ps-3 fs-5 " role="button"
           data-bs-toggle="dropdown" aria-expanded="false">
+          <img
+            src="https://img.icons8.com/external-pixer-icons-pack-dmitry-mirolyubov/44/FFFFFF/external-cart-retail-pixer-icons-pack-dmitry-mirolyubov.png"
+            class="products-icon spiegelnX" />
           Alle Produkte
         </a>
         <ul class="dropdown-menu">
@@ -82,12 +98,27 @@
         </ul>
       </div>
       <div class="dropdown text-white">
-        <a class="nav-link dropdown-toggle disabled d-inline p-2" role="button"
+        <a class="nav-link dropdown-toggle disabled d-inline px-4 fs-5" role="button"
           data-bs-toggle="dropdown" aria-expanded="false">
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/grocery-bag.png"
+            class="products-icon spiegelnX" />
           Einkaufswagen
         </a>
       </div>
     </div>
+
+    <div class="d-flex align-items-center ps-2">
+      <img src="./img/globus-bag.png" alt="globus-bag">
+      <p class="ps-4 pt-3 font-special text-white">24 Artikel <br><span
+          class="text-globus-green">✓ gemerkt</span></p>
+    </div>
+
+  </section>
+
+  <!-- Add article section-->
+
+  <div class=" container">
 
 
     <!-- Content: Carousel, Description-->
@@ -207,7 +238,8 @@
   <!--Immer frisch & lecker Start-->
   <section class="container text-center text-white p-4">
     <h4>Immer frisch & lecker</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores at commodi
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores at
+      commodi
       delectus esse ex excepturi
       fugit illo iure molestias mollitia nesciunt odit quasi quidem quisquam quo
       recusandae rem, sapiente similique
@@ -339,7 +371,8 @@
           <h5 class="py-3">Zutaten in Tomaten )))</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti
             dolorem dolores exercitationem
-            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil nisi
+            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil
+            nisi
             nobis unde voluptatibus! Alias
             asperiores, aut cum cumque doloribus excepturi laboriosam, magnam, nobis
             officiis pariatur quaerat quis quod
@@ -352,7 +385,8 @@
           <h5 class="py-3">Besondere Rezepte:</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deleniti
             dolorem dolores exercitationem
-            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil nisi
+            incidunt, provident quibusdam. Aperiam dolor est, explicabo facere nihil
+            nisi
             nobis unde voluptatibus! Alias
             asperiores, aut cum cumque doloribus excepturi laboriosam, magnam, nobis
             officiis pariatur quaerat quis quod
