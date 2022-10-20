@@ -106,12 +106,6 @@ body {
   color: var(--color-orange);
 }
 
-.main-navbar {
-  display: flex;
-  flex-direction: row;
-  width: 60vw;
-  margin: 0 auto;
-}
 .header-icon {
   padding: 0;
 }
