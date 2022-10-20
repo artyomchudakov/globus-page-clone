@@ -4,6 +4,7 @@
   --color-orange: #f98a00;
   --color-green: #13aa08;
   --color-red: #c40100;
+  --color-grey: #474747;
 }
 
 body {
@@ -11,6 +12,14 @@ body {
   background-size: cover;
   background-blend-mode: luminosity;
   font-family: 'Noto Sans', sans-serif;
+}
+
+#goal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -5;
 }
 
 .bg-globus-orange {
