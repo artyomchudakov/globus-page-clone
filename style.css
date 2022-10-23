@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 :root {
   --color-orange: #f98a00;
@@ -11,10 +12,10 @@
 }
 
 body {
-  background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg');
+  /* background-image: url('https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_960_720.jpg');
   background-size: cover;
-  background-blend-mode: luminosity;
-  font-family: Roboto, sans-serif;
+  background-blend-mode: luminosity; */
+  font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 #goal {
@@ -69,6 +70,9 @@ body {
 .font-permanent-marker {
   font-family: 'Permanent Marker', cursive;
 }
+.font-ubuntu {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
 
 .rotated {
   display: inline-block;
@@ -87,6 +91,9 @@ body {
 .font-orange {
   color: var(--color-orange);
 }
+.font-gray {
+  color: var(--color-grey);
+}
 
 .go-down-arrow {
   transform: skew(12deg, 2deg);
@@ -96,8 +103,7 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 0 0.5rem;
-  font-size: 11px;
-  font-family: sans-serif;
+  font-size: 12px;
 }
 .login-section-link:hover {
   opacity: 0.9;
@@ -125,4 +131,12 @@ body {
 
 .dropdown-bag-section {
   padding: 4rem 4rem 0 3rem;
+}
+
+.width-60 {
+  width: 60vw;
+}
+
+.font-size-navbar-link {
+  font-size: 20px;
 }
