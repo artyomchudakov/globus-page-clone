@@ -216,16 +216,16 @@
 
   <!-- Add article section-->
 
-  <section class="width-60 mx-auto">
+  <section class="width-60 mx-auto py-3">
 
 
     <!-- Content: Carousel, Description-->
     <div class="card border border-1 border-white bg-transparent">
-      <div class="card-body">
+      <div class="card-body py-2">
 
-        <div class="row align-items-center">
+        <div class="row align-items-center py-2">
           <!-- Carousel  Start-->
-          <div class="col-lg-6 pb-4">
+          <div class="col-lg-6 py-3">
             <div id="carouselProductImages" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselProductImages"
@@ -253,17 +253,21 @@
           <!-- Carousel  End-->
 
           <!-- Product variations and prices Start-->
-          <div class="col-lg-6 pb-4 d-flex flex-column justify-content-between">
+          <div
+            class="col-lg-6 py-3 d-flex flex-column justify-content-between font-gray font-ubuntu">
 
-            <div class="row">
-              <div class="col-12 col-sm-6">
-                <h3>Cherry Tomaten</h3>
-                <p>Globus</p>
+            <div>
+              <div class="d-flex justify-content-between">
+                <p class="display-6 fw-bold">Cherry Tomaten</p>
+                <div class="py-3 px-3">
+                  <button class="custom-card-label bg-globus-red me-2">ANGEBOT</button>
+                  <button class="custom-card-label bg-globus-green me-1">NEU</button>
+                  <!-- <a href="#" class="card-label bg-globus-red me-2">ANGEBOT</a>
+                  <a href="#" class="card-label bg-globus-green me-1">NEU</a> -->
+                </div>
               </div>
-              <div class="col-12 col-sm-6 text-sm-end">
-                <a href="#" class="btn btn-sm btn-danger">ANGEBOT</a>
-                <a href="#" class="btn btn-sm btn-success">NEU</a>
-              </div>
+              <p>Globus</p>
+
             </div>
 
             <div class="row py-2">
@@ -329,8 +333,8 @@
   </section>
 
   <!--Immer frisch & lecker Start-->
-  <section class="container text-center text-white p-4">
-    <h4>Immer frisch & lecker</h4>
+  <section class="width-60 mx-auto py-5 text-center text-white fw-bold font-ubuntu">
+    <h3 class="fw-bold pt-5">Immer frisch & lecker.</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores at
       commodi
       delectus esse ex excepturi
@@ -345,30 +349,30 @@
   <!--Immer frisch & lecker End-->
 
   <!--Icons Section Start-->
-  <section class="container p-4 text-center text-white">
-    <div class="row p-4 gx-5">
-      <div class="col">
-        <p class="display-4 font-orange"><i
-            class="fa-solid fa-wheat-awn-circle-exclamation"></i></p>
-        <p>GLUTEINFREI</p>
-      </div>
-      <div class="col">
-        <p class="display-4 font-orange"><i class="fa-solid fa-leaf"></i></p>
-        <p>BIO</p>
-      </div>
-      <div class="col">
-        <p class="display-4 font-orange"><i class="fa-solid fa-bottle-droplet"></i></p>
-        <p>LAKTOSEFREI</p>
-      </div>
-      <div class="col">
-        <p class="display-4 font-orange"><i class="fa-solid fa-seedling"></i></p>
-        <p>VEGAN</p>
-      </div>
+  <section class="width-60 mx-auto p-5 text-center text-white font-ubuntu fw-bold">
+    <div class="d-flex justify-content-around py-4">
+      <figure>
+        <img src="./img/glutenfrei-icon-modified.png" alt="glutenfrei-icon"
+          class="big-orange-icon">
+        <figcaption class="pt-2">GLUTENFREI</figcaption>
+      </figure>
+      <figure>
+        <img src="./img/bio-icon-modified.png" alt="bio-icon" class="big-orange-icon">
+        <figcaption class="pt-2">BIO</figcaption>
+      </figure>
+      <figure>
+        <img src="./img/laktosefrei-icon-modified.png" alt="laktosefrei-icon"
+          class="big-orange-icon">
+        <figcaption class="pt-2">LAKTOSEFREI</figcaption>
+      </figure>
+      <figure>
+        <img src="./img/vegan-icon-modified.png" alt="vegan-icon" class="big-orange-icon">
+        <figcaption class="pt-2">VEGAN</figcaption>
+      </figure>
     </div>
 
-    <div class="row p-5">
-      <div class="col display-3"><i class="fa-solid fa-angle-down go-down-arrow"></i>
-      </div>
+    <div class="p-5 ps-3">
+      <img src="./img/big-arrow-down.png" alt="big-arrow-down">
     </div>
 
   </section>
