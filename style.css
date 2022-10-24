@@ -80,15 +80,6 @@ body {
   transform: rotate(250deg) scaleX(-1.3);
 }
 
-#scroll-to-top {
-  cursor: pointer;
-}
-
-#scroll-to-top:hover {
-  transform: scale(1.25);
-  transition: font-size 0.3s ease-in-out;
-}
-
 .text-globus-orange {
   color: var(--color-orange);
 }
@@ -268,4 +259,18 @@ dl dd {
     rgba(238, 165, 60, 0.9976365546218487) 12%,
     rgba(230, 139, 64, 1) 45%
   );
+}
+
+/* footer */
+footer small {
+  font-size: 10px;
+}
+
+#scroll-to-top {
+  cursor: pointer;
+}
+
+#scroll-to-top:hover {
+  transform: scale(1.01);
+  transition: all 0.3s linear;
 }
