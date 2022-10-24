@@ -27,14 +27,6 @@ body {
   opacity: 0.5;
 }
 
-.bg-globus-orange {
-  background: rgb(249, 138, 0);
-  background: radial-gradient(
-    circle,
-    rgba(238, 165, 60, 0.9976365546218487) 12%,
-    rgba(230, 139, 64, 1) 45%
-  );
-}
 .bg-globus-red {
   background-color: var(--color-red);
 }
@@ -235,7 +227,7 @@ dl dd {
 
 /* Card Slider */
 .custom-carousel-card {
-  box-shadow: 2px 5px 5px 2px rgba(85, 85, 85, 0.3);
+  box-shadow: -1px 1px 5px 0px rgba(85, 85, 85, 0.3);
 }
 
 /* Section - explore our own Products */
@@ -262,4 +254,18 @@ dl dd {
 
 .explore-btn:hover {
   opacity: 0.9;
+}
+
+/* Social Media Section */
+.social-media-section {
+  min-height: 335px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(249, 138, 0);
+  background: radial-gradient(
+    circle,
+    rgba(238, 165, 60, 0.9976365546218487) 12%,
+    rgba(230, 139, 64, 1) 45%
+  );
 }
