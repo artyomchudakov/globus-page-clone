@@ -97,10 +97,10 @@ body {
   transition: font-size 0.3s ease-in-out;
 }
 
-.font-orange {
+.text-globus-orange {
   color: var(--color-orange);
 }
-.font-gray {
+.text-globus-gray {
   color: var(--color-grey);
 }
 
@@ -156,4 +156,75 @@ body {
 
 .big-orange-icon {
   width: 115px;
+}
+
+/* Tabs Section */
+
+.about {
+  border-radius: 3px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.btn-container {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn {
+  padding: 1.5rem 0 2.25rem 0;
+  border: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 2.5rem;
+  display: block;
+  background: transparent;
+  color: white;
+  font-family: 'Caveat', cursive;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.tab-btn:hover:not(.active) {
+  color: #22222293;
+}
+.about-content {
+  min-height: 515px;
+  padding: 2rem 1.5rem;
+  background: #ececec;
+}
+
+/* hide content */
+.content {
+  display: none;
+}
+.tab-btn.active {
+  background: #ececec;
+  color: #555555;
+}
+.content.active {
+  display: block;
+}
+
+dl hr {
+  margin: 6px 0;
+}
+dl {
+  width: 27rem;
+  padding-top: 13px;
+}
+dl dt {
+  font-weight: normal;
+}
+dl dd {
+  font-weight: bold;
+}
+
+.mehr-erfahren-btn {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-orange);
+  color: white;
+  font-weight: bold;
 }
