@@ -274,3 +274,28 @@ footer small {
   transform: scale(1.01);
   transition: all 0.3s linear;
 }
+
+/* Sticky icon-bar */
+.icon-bar {
+  position: fixed;
+  top: 75%;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  margin-bottom: 1px;
+  padding: 12px 6px;
+  transition: all 0.3s ease;
+  background-color: #474747;
+  border-radius: 0 2px 2px 0;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
