@@ -27,6 +27,16 @@ body {
   opacity: 0.5;
 }
 
+/* Breadcrumb in header */
+.custom-breadcrumb {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 14px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: 600;
+}
+
 .bg-globus-red {
   background-color: var(--color-red);
 }
@@ -393,6 +403,12 @@ footer small {
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .custom-breadcrumb {
+    position: absolute;
+    top: 110px;
+    left: 30%;
+  }
+
   .tab-btn {
     font-size: 2rem;
     padding: 1.5rem;
