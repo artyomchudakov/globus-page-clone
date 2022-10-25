@@ -9,22 +9,23 @@
   --color-grey: #555555;
 
   --color-text-green: #009933;
+  --transition: all 0.3s linear;
 }
 
 body {
-  /* background-image: url('./img/blackboard-bg.png'); */
-  /* background-size: cover; */
-  /* background-blend-mode: luminosity; */
+  background-image: url('./img/blackboard-bg.png');
+  background-size: cover;
   font-family: 'Ubuntu Condensed', sans-serif;
 }
 
-#goal {
+.navbar-white-bg {
+  width: 100vw;
+  height: 105px;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -5;
-  opacity: 0.5;
+  left: 0;
+  z-index: -1;
+  background-color: white;
 }
 
 /* Breadcrumb in header */
@@ -131,6 +132,11 @@ body {
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  transition: var(--transition);
+}
+.product-size-link:hover {
+  background-color: var(--color-grey);
+  color: white;
 }
 
 .btn-weniger,
@@ -198,7 +204,7 @@ body {
   border-radius: 3px 0 0 3px;
   background-color: var(--color-orange);
   color: white;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 
 .newsletter-btn {
@@ -208,7 +214,7 @@ body {
   background-color: var(--color-orange);
   color: white;
   font-weight: bold;
-  transition: all 0.3s linear;
+  transition: var(--transition);
   transform: rotate(-12deg);
 }
 
@@ -241,10 +247,10 @@ body {
   color: white;
   font-family: 'Caveat', cursive;
   cursor: pointer;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 .tab-btn:hover:not(.active) {
-  color: #22222293;
+  color: var(--color-orange);
 }
 .about-content {
   min-height: 515px;
@@ -285,7 +291,7 @@ dl dd {
   background-color: var(--color-orange);
   color: white;
   font-weight: bold;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 .mehr-erfahren-btn:hover {
   opacity: 0.9;
@@ -335,7 +341,7 @@ dl dd {
   background-color: var(--color-orange);
   color: white;
   font-weight: bold;
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 
 .explore-btn:hover {
@@ -367,7 +373,7 @@ footer small {
 
 #scroll-to-top:hover {
   transform: scale(1.01);
-  transition: all 0.3s linear;
+  transition: var(--transition);
 }
 
 /* Sticky icon-bar */
