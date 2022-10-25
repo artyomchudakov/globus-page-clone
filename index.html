@@ -85,129 +85,163 @@
   </header>
 
   <!-- Dropdown, Tabs, Globus-Bag Section Start -->
-  <section
-    class="d-flex flex-wrap align-items-center justify-content-md-around dropdown-bag-section font-ubuntu pb-2">
-    <div class="d-flex pt-5">
-      <div class="dropdown text-white">
-        <a class="nav-link dropdown-toggle d-inline ps-3 fs-5 fw-bold role=" button"
-          data-bs-toggle="dropdown" aria-expanded="false">
+  <section class="width-60 mx-auto pt-2">
+    <div
+      class="d-flex align-items-baseline justify-content-between pt-5 font-ubuntu pb-2">
+      <div>
+        <a class="nav-link d-inline fs-5 fw-bold text-white" data-bs-toggle="collapse"
+          href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
           <img
             src="https://img.icons8.com/external-pixer-icons-pack-dmitry-mirolyubov/44/FFFFFF/external-cart-retail-pixer-icons-pack-dmitry-mirolyubov.png"
             class="products-icon spiegelnX" />
           Alle Produkte
         </a>
-        <ul class="dropdown-menu font-ubuntu" style="min-width: 18rem;">
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/autozubehoer-modified.png"
-                    alt="Autozubehör-icon"> Autozubehör</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/drogerie-modified.png"
-                    alt="drogerie-icon"> Drogerie</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/essen-trinken-modified.png"
-                    alt="essen-trinken-icon"> Essen
-                  & Trinken</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/globus-eigenproduktion-modified.png"
-                    alt="globus-eigenproduktion-icon"> Globus-Eigenproduktion</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/haushalt-wohnen-modified.png"
-                    alt="haushalt-wohnen-icon"> Haushalt & Wohnen</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/foto-lesen-schreiben-modified.png"
-                    alt="foto-lesen-schreiben-icon"> Foto, Lesen & Schreiben</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/gastronomie-modified.png"
-                    alt="gastronomie-icon"> Gastronomie</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/schmuck-modified.png"
-                    alt="schmuck-icon"> Schmuck</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img
-                    src="./img/dropdown-icons/textilien-accessoires-sport-modified.png"
-                    alt="textilien-accessoires-sport-icon"> Textilien, Accessoires & Sport
-                </p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">
-              <div class="d-flex justify-content-between">
-                <p><img src="./img/dropdown-icons/spielwaren-modified.png"
-                    alt="spielwaren-icon"> Spielwaren</p>
-                <p class="font-caveat-cursive fw-bold ps-2">></p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="dropdown text-white">
-        <a class="nav-link dropdown-toggle disabled d-inline px-4 fs-5 fw-bold"
-          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <a class="nav-link disabled d-inline px-4 fs-5 fw-bold text-white"
+          data-bs-toggle="collapse" href="#collapseExample" role="button"
+          aria-expanded="false" aria-controls="collapseExample">
           <img
             src="https://img.icons8.com/fluency-systems-regular/48/FFFFFF/grocery-bag.png"
             class="products-icon spiegelnX" />
-          Einkaufswagen
+          Einkaufsliste
         </a>
+
+      </div>
+      <div class="d-flex align-items-center pt-2 ps-5">
+        <img src="./img/globus-bag.png" alt="globus-bag">
+        <p class="ps-3 pt-3 font-caveat-cursive text-white">24 Artikel <br><span
+            class="text-globus-green">✓ gemerkt</span></p>
+      </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+      <div class="container">
+        <div class="card row flex-row-reverse border-0">
+          <div class="d-none d-md-block col-12 col-lg-8 px-0">
+            <div class="card img-fluid border-0">
+              <img class="card-img-top rounded-end" src="./img/breakfast-in-bed.jpg"
+                alt="Card image" style="max-width:100%">
+              <div
+                class="card-img-overlay d-flex justify-content-center align-items-center">
+                <div class="p-5 text-center font-ubuntu text-white">
+                  <h4 class="card-title fw-bold display-4">Schon probiert?</h4>
+                  <p class="card-text">Saftiges Obst, knusprig-warme Brötchen und
+                    hochwertiges Fleisch
+                    aud der Region - wir sind sicher, dass in unserem Angebot für jeden
+                    etwas dabei ist. Wir möchten natürlich, dass diese Produkte zu Ihren
+                    Wünschen passen. Deshalb helfen Ihnen auf diesen Seiten und in
+                    unserem SB-Warenhäusern viele Globus Mitarbeiter weiter. Erfahren
+                    Sie mehr über unsere hohen Ansprüche an Qualität und Frische.</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-lg-4 card-body">
+            <ul class="ul-reset-defaults">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/autozubehoer-modified.png"
+                        alt="Autozubehör-icon"> Autozubehör</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/drogerie-modified.png"
+                        alt="drogerie-icon">
+                      Drogerie</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/essen-trinken-modified.png"
+                        alt="essen-trinken-icon"> Essen
+                      & Trinken</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/globus-eigenproduktion-modified.png"
+                        alt="globus-eigenproduktion-icon"> Globus-Eigenproduktion</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/haushalt-wohnen-modified.png"
+                        alt="haushalt-wohnen-icon"> Haushalt & Wohnen</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/foto-lesen-schreiben-modified.png"
+                        alt="foto-lesen-schreiben-icon"> Foto, Lesen & Schreiben</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/gastronomie-modified.png"
+                        alt="gastronomie-icon"> Gastronomie</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/schmuck-modified.png"
+                        alt="schmuck-icon">
+                      Schmuck</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img
+                        src="./img/dropdown-icons/textilien-accessoires-sport-modified.png"
+                        alt="textilien-accessoires-sport-icon"> Textilien, Accessoires &
+                      Sport
+                    </p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex justify-content-between">
+                    <p><img src="./img/dropdown-icons/spielwaren-modified.png"
+                        alt="spielwaren-icon">
+                      Spielwaren</p>
+                    <p class="font-caveat-cursive fw-bold ps-2">></p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="d-flex align-items-center ps-5">
-      <img src="./img/globus-bag.png" alt="globus-bag">
-      <p class="ps-4 pt-3 font-caveat-cursive text-white">24 Artikel <br><span
-          class="text-globus-green">✓ gemerkt</span></p>
-    </div>
 
   </section>
   <!-- Dropdown, Tabs, Globus-Bag Section End -->
