@@ -276,12 +276,12 @@
 
 
     <!-- Content: Carousel, Description-->
-    <div class="card border border-1 border-white bg-transparent">
+    <div class="card bg-white">
       <div class="card-body py-2">
 
-        <div class="row align-items-center py-2">
+        <div class="row align-items-center py-2 px-4 px-lg-1">
           <!-- Carousel  Start-->
-          <div class="col-lg-6 py-3">
+          <div class="col-12 col-lg-6 py-3 px-0">
             <div id="carouselProductImages" class="carousel slide" data-bs-ride="true">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselProductImages"
@@ -293,7 +293,7 @@
                   data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
 
-              <div class="carousel-inner">
+              <div class="carousel-inner px-4">
                 <div class="carousel-item active">
                   <img src="/img/tomate-0.jpg" class="d-block w-100" alt="tomate">
                 </div>
@@ -310,10 +310,10 @@
 
           <!-- Product variations and prices Start-->
           <div
-            class="col-lg-6 py-3 d-flex flex-column justify-content-between text-globus-gray font-ubuntu">
+            class="col-12 col-lg-6 ps-0 py-3 d-flex flex-column justify-content-between text-globus-gray font-ubuntu">
 
             <div>
-              <div class="d-flex justify-content-between">
+              <div class="d-flex flex-wrap justify-content-between">
                 <p class="display-6 fw-bold">Cherry Tomaten</p>
                 <div class="py-3 px-3">
                   <button class="custom-card-label bg-globus-red me-2">ANGEBOT</button>
@@ -324,60 +324,69 @@
 
             </div>
 
-            <div class="row py-2">
-              <div class="col-12 col-sm-6 font-caveat-cursive">
-                <div class="d-flex align-items-end">
-                  <p class="d-flex align-items-center mb-0 pe-3 display-3 text-danger fw-bold"
-                    id="price">2,10 €</p>
-                  <p class="d-inline fs-6 text-muted text-decoration-line-through"
-                    id="price-normally">2,60 €</p>
-                </div>
-                <div class="fw-lighter lh-1 price-info">
-                  <p>inkl. Mwst. zzgl. Versandkosten</p>
-                  <p>500g (1kg = <span id="kg-price">4,20</span> €)</p>
-                </div>
+
+            <div class="d-flex flex-wrap justify-content-between align-items-end">
+              <div class="d-flex flex-wrap align-items-end font-caveat-cursive">
+                <p class="d-flex align-items-center mb-0 pe-3 display-3 text-danger fw-bold"
+                  id="price">2,10 €</p>
+                <p class="d-inline fs-6 text-muted text-decoration-line-through"
+                  id="price-normally">2,60 €</p>
               </div>
-              <div class="col-12 col-sm-6 text-sm-end">
-                <p>Soll es eine andere Größe sein?</p>
-                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
-                  id="largest-weight-btn">500 g</a>
-                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
-                  id="middle-weight-btn">300 g</a>
-                <a href="#" class="btn btn-sm btn-outline-secondary px-3 px"
-                  id="lowest-weight-btn">250 g</a>
+              <div class="fw-bold fs-5 pb-3 pe-3">Soll es eine andere Größe sein?</div>
+            </div>
+
+
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="fw-lighter lh-1 price-info font-caveat-cursive">
+                <p>inkl. Mwst. zzgl. Versandkosten</p>
+                <p>500g (1kg = <span id="kg-price">4,20</span> €)</p>
+              </div>
+              <div class="pe-4">
+                <a href="#" class="product-size-link me-1" id="largest-weight-btn">500
+                  g</a>
+                <a href="#" class="product-size-link me-1" id="middle-weight-btn">300
+                  g</a>
+                <a href="#" class="product-size-link" id="lowest-weight-btn">250 g</a>
               </div>
             </div>
 
-            <div class="row py-2 position-relative">
-              <div class="col-12 col-sm-6 text-md-end">
-                <p
-                  class="d-none d-md-block font-caveat-cursive text-center position-absolute top-0 start-50 translate-middle">
-                  ich brauche mehr
-                  <br> <span class="rotated">⤴</span>
-                </p>
-                <div class="btn-group" role="group" aria-label="Product quantity">
-                  <button class="btn btn-secondary" type="button"
-                    id="decrease-product-quantity">-</button>
-                  <button class="btn btn-disabled" type="button"
-                    id="product-quantity">3</button>
-                  <button class="btn btn-secondary" type="button"
-                    id="increase-product-quantity">+</button>
-                </div>
-                <p class="d-none d-md-block font-caveat-cursive text-center">weniger ⤴</p>
+
+            <div class="d-flex justify-content-end align-items-baseline">
+              <div class="d-none d-lg-block font-caveat-cursive text-center fs-5">
+                ich brauche mehr <br><img src="./img/ich-brauche-mehr-pfeil.png"
+                  alt="ich-brauche-mehr-pfeil">
               </div>
-              <div class="col-12 col-sm-6 text-sm-end">
-                <div class="py-3">
-                  vergleichen
-                  <a href="#" class="btn btn-warning"><i
-                      class="fa-solid fa-rotate"></i></a>
-                </div>
-                <div>
-                  + Auf die Einkaufsliste
-                  <a href="#" class="btn btn-success"><i
-                      class="fa-solid fa-cart-plus"></i></a>
-                </div>
+              <div class="py-3 vergleichen text-end pe-4">
+                vergleichen
+                <a href=" #" class=""><img src="./img/vergleichen-orange.png"
+                    alt="vergleichen-orange"></a>
               </div>
             </div>
+
+            <div class="d-flex justify-content-end pe-4 pb-2">
+              <div
+                class="d-none d-lg-block align-self-end font-caveat-cursive text-center fs-5 me-4">
+                weniger
+                <img src="./img/weniger-pfeil.png" alt="weniger-pfeil">
+              </div>
+              <div class="btn-group me-5" role="group" aria-label="Product quantity">
+                <button class="btn-weniger" type="button"
+                  id="decrease-product-quantity"><img
+                    src="https://img.icons8.com/android/15/FFFFFF/minus.png" /></button>
+                <button class="btn-quantity font-caveat-cursive fw-bold" type="button"
+                  id="product-quantity">3</button>
+                <button class="btn-mehr" type="button" id="increase-product-quantity"><img
+                    src="https://img.icons8.com/android/15/FFFFFF/plus.png" /></button>
+              </div>
+              <div class="auf-die-einkaufsliste text-end">
+                <img src="https://img.icons8.com/android/15/555555/plus.png" /> Auf die
+                Einkaufsliste
+                <a href="#" class=""><img src="./img/einkaufsliste-green.png"
+                    alt="einkaufsliste-green"></a>
+              </div>
+            </div>
+
+
           </div>
         </div>
         <!-- Product variations and prices End-->

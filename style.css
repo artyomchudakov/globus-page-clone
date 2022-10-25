@@ -124,6 +124,42 @@ body {
   width: 60vw;
 }
 
+.product-size-link {
+  text-decoration: none;
+  color: var(--color-grey);
+  border: 1px solid var(--color-grey);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-weniger,
+.btn-mehr {
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  background-color: var(--color-grey);
+  color: white;
+}
+.btn-quantity {
+  padding: 5px 10px;
+  text-align: center;
+  border: none;
+  color: var(--color-grey);
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.btn-weniger,
+.btn-mehr {
+  border: 1px solid lightgray;
+}
+
+.btn-weniger {
+  border-radius: 5px 0 0 5px;
+}
+.btn-mehr {
+  border-radius: 0 5px 5px 0;
+}
+
 .custom-card-label {
   padding: 0 1rem;
   border: none;
@@ -392,6 +428,11 @@ footer small {
     padding: 0;
   }
 
+  .auf-die-einkaufsliste,
+  .vergleichen {
+    min-width: 200px;
+  }
+
   .tab-btn {
     font-size: 2rem;
     padding: 1.5rem;
@@ -402,6 +443,10 @@ footer small {
   .cards-wrapper .card {
     margin: 0 0.5em;
     width: calc(100% / 5);
+  }
+
+  .product-size-link {
+    padding: 10px 30px;
   }
 
   .tab-btn {
