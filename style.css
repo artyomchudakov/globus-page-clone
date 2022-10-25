@@ -156,11 +156,10 @@ body {
 }
 
 .tab-btn {
-  padding: 1.5rem 0 2.25rem 0;
+  padding: 1rem;
   border: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
-  font-size: 2.5rem;
   display: block;
   background: transparent;
   color: white;
@@ -193,7 +192,7 @@ dl hr {
   margin: 6px 0;
 }
 dl {
-  width: 27rem;
+  max-width: 27rem;
   padding-top: 13px;
 }
 dl dt {
@@ -298,4 +297,36 @@ footer small {
 
 .icon-bar a:hover {
   background-color: #000;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  .tab-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .tab-btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .tab-btn {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tab-btn {
+    font-size: 2.5rem;
+    padding: 1.5rem 0 2.25rem 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
 }
