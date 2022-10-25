@@ -37,6 +37,14 @@ body {
   font-weight: 600;
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  color: white !important;
+}
+
+.dropdown-btn-caret {
+  font-size: 11px;
+}
+
 .bg-globus-red {
   background-color: var(--color-red);
 }
@@ -381,6 +389,7 @@ footer small {
     position: absolute;
     top: 110px;
     left: 30%;
+    padding: 0;
   }
 
   .tab-btn {
