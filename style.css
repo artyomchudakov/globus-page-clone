@@ -141,6 +141,52 @@ body {
   width: 115px;
 }
 
+/* Newsletter Sidebar */
+.newsletter-sidebar {
+  position: absolute;
+  right: 0;
+  top: 310px;
+}
+
+.newsletter-sidebar-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.newsletter-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(-5deg);
+  padding-bottom: 16px;
+}
+
+.newsletter-btn-small {
+  border: none;
+  border-radius: 3px 0 0 3px;
+  background-color: var(--color-orange);
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.newsletter-btn {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--color-orange);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s linear;
+  transform: rotate(-12deg);
+}
+
+.newsletter-btn:hover,
+.newsletter-btn-small:hover {
+  opacity: 0.9;
+}
+
 /* Tabs Section */
 
 .about {
