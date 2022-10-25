@@ -16,6 +16,7 @@ body {
   background-image: url('./img/blackboard-bg.png');
   background-size: cover;
   font-family: 'Ubuntu Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar-white-bg {
